@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"html/template"
 	"log"
 	"myapp/rps"
@@ -46,6 +47,7 @@ func main() {
 
 	log.Println("starting we browser on port 8080")
 	http.ListenAndServe(":8080", nil)
+	fmt.Println("Ritesh to check ")
 }
 
 func renderTemplate(w http.ResponseWriter, page string) {
